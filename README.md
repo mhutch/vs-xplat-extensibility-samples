@@ -30,8 +30,5 @@ This project demonstrates code reuse when dual targeting VS for Windows and VS f
 - Requires Visual Studio for Mac 15.6
 - Requires Addin Maker
 - From the OS X terminal in the solution directory:
-  - run msbuild /t:restore
-  - run msbuild /t:build
-  - cd AsyncQuickInfoDemo.VSMac
-  - run msbuild /t:InstallAddin
+  - run `msbuild /r /p:InstallAddin=true`
   - Launch VS for Mac
